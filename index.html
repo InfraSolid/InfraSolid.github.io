@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Floorplan Maker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body>
+    <div id="UI">
+        <div class="sidebar">
+            <button id="doorBtn"><img src="Images/door.png" id="dooricon" width="50px" height="75px"
+                    draggable="false"></button>
+            <button id="doorBtn2"><img src="Images/door.png" id="dooricon2" width="50px" height="75px"
+                    draggable="false"></button>
+            <button id="windowBtn"><img src="Images/window.webp" id="windowicon" width="75px" height="75px"
+                    draggable="false"></button>
+            <button id="tableBtn"><img src="Images/table.png" id="tableicon" width="75px" height="75px"
+                    draggable="false"></button>
+            <button id="chairBtn"><img src="Images/chair.png" id="chairicon" width="60px" height="75px"
+                    draggable="false"></button>
+            <button id="bedBtn"><img src="Images/bed.webp" id="bedicon" width="75px" height="75px"
+                    draggable="false"></button>
+            <button id="squareBtn"><img src="Images/square.jpg" id="squareicon" width="75px" height="75px"
+                    draggable="false"></button>
+            <button id="circleBtn"><img src="Images/circle.png" id="circleicon" width="75px" height="75px"
+                    draggable="false"></button>
+            <button id="stairBtn"><img src="Images/stairs.webp" id="stairicon" width="75px" height="75px"
+                    draggable="false"></button>
+        </div>
+        <input type="range" id="rotationSlider" min="0" max="360" value="0" step="1">
+        <button id="saveBtn">Save</button>
+        <button id="loadBtn">Load</button>
+        <label class="genericStroked" for="genericStroked">Generic Outline</label>
+        <input type="checkbox" id="genericStroked" checked><br>
+        <label class="genericFilled" for="genericFilled">Generic Filled</label>
+        <input type="checkbox" id="genericFilled" checked>
+        <input type="number" id="genericWidth" value="10">
+        <input type="number" id="genericHeight" value="10">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

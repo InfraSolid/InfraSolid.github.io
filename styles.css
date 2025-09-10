@@ -1,0 +1,170 @@
+p {
+  color: orchid;
+}
+
+body {
+  background-color: #000000;
+  font-family: 'Comic Sans MS', 'ChalkBoard SE', 'Comic Neue', sans-serif;
+  user-select: none;
+  overflow: hidden;
+  touch-action: manipulation;
+}
+
+body * {
+  user-select: none;
+  margin: 0px;
+  font-family: 'Comic Sans MS', 'ChalkBoard SE', 'Comic Neue', sans-serif;
+  transition: opacity 0.5s, visibility 0.5s;
+  touch-action: manipulation;
+}
+
+canvas {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(200, 125, 175);
+  border: 2px solid rgb(200, 125, 175);
+  margin-bottom: 2px;
+  border-radius: 4px;
+  transition: background 0.5s;
+}
+
+button:hover {
+  background-color: rgba(50, 50, 50, 1);
+}
+
+label {
+  user-select: none;
+  pointer-events: none;
+  position: relative;
+  z-index: 1;
+  color: rgb(200, 125, 175);
+  opacity: 100%;
+}
+
+input {
+  user-select: none;
+  position: relative;
+  z-index: 1;
+  background: rgba(25, 25, 25, 1);
+  color: rgb(200, 125, 175);
+  width: fit-content;
+  border-style: solid;
+  border-color: rgb(200, 125, 175);
+  border-width: 1px;
+  outline: none;
+  margin: 1px;
+  opacity: 1;
+  border-radius: 4px;
+}
+/*
+::-webkit-scrollbar {
+  display: none;
+}
+*/
+.sidebar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 75px;
+  background-color: rgba(84, 84, 84, 0);
+  z-index: 0;
+  overflow-y:scroll;
+  overflow-x:hidden;
+}
+
+#rotationSlider {
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  width: 180px;
+  z-index: 1;
+}
+
+.sidebar button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+image {
+  pointer-events: none;
+  user-select: none;
+}
+
+#dooricon2 {
+  transform: scaleX(-1);
+}
+
+.test {
+  color: rgb(157, 106, 208)
+}
+
+#loadBtn {
+  position: absolute;
+  top: 80px;
+  right: 10px;
+  z-index: 1;
+  width: 50px;
+  height: 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(200, 125, 175);
+  border: 2px solid rgb(200, 125, 175);
+  border-radius: 4px;
+  transition: background 0.5s;
+}
+
+#saveBtn {
+  position: absolute;
+  top: 80px;
+  right: 65px;
+  z-index: 1;
+  width: 50px;
+  height: 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(200, 125, 175);
+  border: 2px solid rgb(200, 125, 175);
+  transition: background 0.5s;
+}
+
+.genericStroked {
+  position: absolute;
+  top: 150px;
+  left: 0px;
+}
+
+.genericFilled {
+  position: absolute;
+  top: 170px;
+  left: 0px;
+}
+
+#genericStroked {
+  position: absolute;
+  top: 155px;
+  left: 120px;
+}
+
+#genericFilled {
+  position: absolute;
+  top: 175px;
+  left: 120px;
+}
+#genericWidth {
+  position: absolute;
+  top: 200px;
+  left: 0px;
+  width: 50px;
+}
+#genericHeight {
+  position: absolute;
+  top: 200px;
+  left: 60px;
+  width: 50px;
+}
